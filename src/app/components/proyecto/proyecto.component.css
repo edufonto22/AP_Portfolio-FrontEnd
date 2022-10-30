@@ -1,0 +1,46 @@
+.container-fluid{
+    background-color:rgb(0, 0, 0);
+    padding:20px;
+    box-sizing: border-box;
+    background:linear-gradient(rgba(237, 62, 14, 0.959),rgba(237, 62, 14, 0.959),rgba(243, 35, 11, 0.918));
+
+}
+
+h1,h3{
+    color: rgb(98, 239, 203);
+    font-family: 'Montserrat', serif;
+    font-weight:800;
+    text-shadow: 0px 10px 10px black;
+}
+.row{
+    width:auto;
+}
+.parte1,.parte2{
+    display:inline-block;
+    text-align: justify;
+}
+.img-proyecto{
+    box-shadow: 10px 10px 30px red;
+    box-shadow: ejeX ejeY difumasion color;
+}
+.card-body{
+    background-color: rgb(0, 0, 0);
+}
+h5{
+    color: rgb(246, 246, 246);
+    font-family: 'Montserrat', serif;
+    font-weight:800;
+    text-shadow: 0px 10px 10px black;
+}
+
+p{
+    color: rgb(254, 255, 255);
+    font-family: 'Montserrat', serif;
+    font-weight:800;
+    text-shadow: 0px 10px 10px black;
+}
+div {
+    
+    background-position: center;
+    text-align: center;
+}

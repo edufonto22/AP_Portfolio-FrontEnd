@@ -1,0 +1,31 @@
+<div class="container-fluid d-flex justify-content-center">
+  <div class="row col-md-8">
+    <h1 class="text-center mt-4">Contacto</h1>
+  
+    <form action="enviar.php" method="post">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre/Name</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido/Last Name</label>
+            <input type="text" class="form-control" name="apellido" id="apellido"  required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="correo" placeholder="correo@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto mb-4">
+          <button type="submit" class="btn btn-outline-success ">Enviar</button>
+        </div>
+    </form>
+  
+  
+  </div>
+  
+</div>

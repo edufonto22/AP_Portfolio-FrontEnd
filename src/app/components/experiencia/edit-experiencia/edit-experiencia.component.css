@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/assets/work.jpg');
+    position: absolute;
+    height: 100%;
+    min-width: 100%;
+    background-position: center;
+    background-size:cover;
+
+}
+
+.form-group{
+    width: 300px;
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    border-style:solid;
+    background-image:linear-gradient(rgb(207, 243, 100),rgb(228, 228, 129),rgb(232, 203, 54));
+    width: 350px;
+    height: 430px;
+}
+label,text{
+    color:rgb(12, 14, 14);
+    font-family:'Montserrat',serif;
+    font-weight: 800;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+
+.btn-primary{
+    font-size: medium;
+    height: 10%;
+    width: 60%;
+}

@@ -1,0 +1,330 @@
+<div class="row d-flex align-items-center justify-content-center">
+
+    <h1>Hard skills</h1>
+    <div class="col-12 d-flex justify-content-center">
+        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+    </div>
+
+
+    <div class="text-center col-sm-3 col-md-3 col-lg-3 circulo" *ngFor="let hskill of hskill">
+        <h3>{{(hskill.nombre)}}</h3>
+        <circle-progress 
+        [percent]="(hskill.porcentaje)" 
+        [radius]="90" 
+        [imageSrc]="hskill.imgSkill" 
+        [titleColor]="'#212F3C'" 
+        [showImage]="true" 
+        [imageHeight]="70" 
+        [imageWidth]="60" 
+        [showUnits]="false"
+        [showSubtitle]="false" 
+        [outerStrokeWidth]="16" 
+        [innerStrokeWidth]="2" 
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true" 
+        [animationDuration]="600">
+        </circle-progress>
+
+        <div>
+            <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editskill/{{hskill.id}}">
+                    <i class="bi bi-pencil-fill"></i></button>
+            </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete(hskill.id)">
+                    <i class="bi bi-trash-fill"></i></button>
+            </td>
+        </div>
+        
+    </div>
+</div>
+
+
+<!--
+
+
+<div class="container-fluid">
+<div class="row d-flex align-items-center justify-content-center">
+    <h1>Hard Skills</h1>
+    
+
+    <div class="text-center col-xs-4 col-sm-4 col-md-3 col-lg-3 circulo">
+        <h3>HTML</h3>
+        <circle-progress
+        [percent]="75"
+        [radius]="50"
+        [showTitle]="true"
+        [showUnits]="true"
+        [imageSrc]="'../assets/logos/logohtml.svg'"
+        [showImage]="true"
+        [imageHeight]="60"
+        [imageWidth]="40"
+        [showUnits]="false"       
+        [showSubtitle]="false"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="2"
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="800"
+        
+
+></circle-progress>
+    </div>
+    <div class="text-center col-xs-3 col-sm-3 col-md-3 col-lg-3 circulo">
+        <h3>CSS</h3>
+        
+        <circle-progress
+        [percent]="70"
+        [radius]="50"
+        [imageSrc]="'../../assets/logos/logocss3.svg'"
+        [showImage]="true"
+        [imageHeight]="60"
+        [imageWidth]="40"
+        [showUnits]="false"       
+        [showSubtitle]="false"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="2"
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="800"
+
+></circle-progress>
+        
+    </div>
+    <div class="text-center col-xs-3 col-sm-3 col-md-3 col-lg-3 circulo">
+        <h3>ANGULAR</h3>
+        <circle-progress
+        [percent]="60"
+        [radius]="50"
+        [imageSrc]="'../assets/logos/logoangular.png'"
+        [showImage]="true"
+        [imageHeight]="60"
+        [imageWidth]="50"
+        [showUnits]="false"       
+        [showSubtitle]="false"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="2"
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="800"
+
+></circle-progress>
+
+    </div>
+    <div class="text-center col-xs-3 col-sm-3 col-md-3 col-lg-3 circulo">
+        <h3>JAVASCRIPT</h3>
+        <circle-progress
+        [percent]="50"
+        [radius]="50"
+        [imageSrc]="'../assets/logos/script.png'"
+        [showImage]="true"
+        [imageHeight]="70"
+        [imageWidth]="70"
+        [showUnits]="false"       
+        [showSubtitle]="false"
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="2"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="800"
+
+></circle-progress>
+
+    </div>
+    <div class="text-center col-xs-3 col-sm-3 col-md-3 col-lg-3 circulo">
+        <h3>JAVA</h3>
+        <circle-progress
+        [percent]="40"
+        [radius]="50"
+        [imageSrc]="'../assets/logos/logojava.svg'"
+        [showImage]="true"
+        [imageHeight]="50"
+        [imageWidth]="50"
+        [showUnits]="false"       
+        [showSubtitle]="false"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="2"
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="800"
+
+></circle-progress>
+
+    </div>
+    <div class="text-center col-xs-3 col-sm-3 col-md-3 col-lg-3 circulo">
+        <h3>GITHUB</h3>
+        <circle-progress
+        [percent]="50"
+        [radius]="50"
+        [imageSrc]="'../assets/logos/logogithub.png'"
+        [showImage]="true"
+        [imageHeight]="50"
+        [imageWidth]="50"
+        [showUnits]="false"       
+        [showSubtitle]="false"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="2"
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="800"
+
+></circle-progress>
+
+    </div>
+    <div class="text-center col-xs-3 col-sm-3 col-md-3 col-lg-3 circulo">
+        <h3>SQL</h3>
+        <circle-progress
+        [percent]="50"
+        [radius]="50"
+        [imageSrc]="'../assets/logos/sql.png'"
+        [showImage]="true"
+        [imageHeight]="60"
+        [imageWidth]="60"
+        [showUnits]="false"       
+        [showSubtitle]="false"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="2"
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="800"
+
+></circle-progress>
+
+    </div>
+    <div>
+        <h1 class="soft">Soft Skils</h1>
+    </div>
+    <div class="text-center col-sm-3 col-md-3 col-lg-3 circulo">
+        <h3>GESTION DE TIEMPO</h3>
+        <circle-progress
+        [percent]="100"
+        [radius]="50"
+        [imageSrc]="'../assets/softskills/gestiontiempo.png'"
+        [showImage]="true"
+        [imageHeight]="70"
+        [imageWidth]="70"
+        [title]="'Gestion de Tiempo'"
+        [titleColor]="'white'"
+        [titleFontSize]="'3em'"
+        [showUnits]="false"       
+        [showSubtitle]="false"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="2"
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="800"
+
+></circle-progress>
+
+    </div>
+    <div class="text-center col-sm-3 col-md-3 col-lg-3 circulo">
+        <h3>CREATIVIDAD</h3>
+        <circle-progress
+        [percent]="100"
+        [radius]="50"
+        [imageSrc]="'../assets/softskills/creatividad.png'"
+        [showImage]="true"
+        [imageHeight]="70"
+        [imageWidth]="70"
+        [showUnits]="false"       
+        [showSubtitle]="false"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="2"
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="800"
+
+></circle-progress>
+
+    </div>
+    <div class="text-center col-sm-3 col-md-3 col-lg-3 circulo">
+        <h3>LIDERAZGO</h3>
+        <circle-progress
+        [percent]="100"
+        [radius]="50"
+        [imageSrc]="'../assets/softskills/liderazgo.png'"
+        [showImage]="true"
+        [imageHeight]="70"
+        [imageWidth]="70"
+        [showUnits]="false"       
+        [showSubtitle]="false"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="2"
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="800"
+
+></circle-progress>
+
+    </div>
+    <div class="text-center col-sm-3 col-md-3 col-lg-3 circulo">
+        <h3>TRABAJO EN EQUIPO</h3>
+        <circle-progress
+        [percent]="100"
+        [radius]="50"
+        [imageSrc]="'../assets/softskills/trabajoequipo.png'"
+        [showImage]="true"
+        [imageHeight]="70"
+        [imageWidth]="70"
+        [showUnits]="false"       
+        [showSubtitle]="false"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="2"
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="800"
+
+></circle-progress>
+
+    </div>
+    <div class="text-center col-sm-3 col-md-3 col-lg-3 circulo">
+        <h3>COMUNICACIÓN</h3>
+        <circle-progress
+        [percent]="100"
+        [radius]="50"
+        [imageSrc]="'../assets/softskills/comunicacion.png'"
+        [showImage]="true"
+        [imageHeight]="70"
+        [imageWidth]="70"
+        [showUnits]="false"       
+        [showSubtitle]="false"
+        [outerStrokeWidth]="16"
+        [innerStrokeWidth]="2"
+        [backgroundColor]="'#C7E596'"
+        [outerStrokeColor]="'#78C000'"
+        [innerStrokeColor]="'#C7E596'"
+        [animation]="true"
+        [animationDuration]="800"
+
+></circle-progress>
+
+    </div>
+</div>
+
+</div>
+
+-->

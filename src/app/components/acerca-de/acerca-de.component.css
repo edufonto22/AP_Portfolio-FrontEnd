@@ -1,0 +1,36 @@
+
+.row{
+    
+    background-image:linear-gradient(#000021,#000010 ,#00001a );
+    background-position: center;
+    
+    
+}
+   
+/*etiqueta nombre*/
+#nombre{
+    font-family: 'Montserrat', serif;
+    font-weight:800;
+    color:gainsboro ;
+    margin-top:30%;
+
+}
+#acerca{
+    font-family: 'Montserrat', serif;
+    font-weight:800;
+    color: rgb(98, 239, 203);
+    margin-top: 30px;
+}
+
+#titulodvp{
+    color:rgb(98, 239, 203);
+    font-family: 'Montserrat', serif;
+    font-weight:600;
+}
+
+#parrafodeacerca{
+    font-family: 'Montserrat', serif;
+    font-weight:400;
+    color:gainsboro;
+    
+}

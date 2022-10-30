@@ -1,0 +1,21 @@
+.container-fluid{
+    
+    background:linear-gradient(rgba(243, 35, 11, 0.918),rgba(243, 35, 11),rgb(239, 4, 27));
+}
+.row{
+    border: 2px solid rgb(98, 239, 203);
+    background-color: red;
+}
+
+h1{
+    color: rgb(98, 239, 203);
+    font-family: 'Montserrat', serif;
+    font-weight:800;
+
+}
+label{
+    color: rgb(98, 239, 203);
+    font-family: 'Montserrat', serif;
+    font-weight:800;
+
+}

@@ -1,0 +1,42 @@
+.row,.card{
+    background-image:linear-gradient(rgba(9, 7, 59, 0.993), rgba(6, 91, 141, 0.945),rgba(237, 62, 14, 0.959));
+    background-position: center;
+    align-items: center;
+    padding:80px;
+    background-blend-mode: darken;   
+}
+
+h1,h5{
+    color: rgb(98, 239, 203);
+    font-family: 'Montserrat', serif;
+    font-weight:800;
+    margin-bottom: 60px;
+    text-align:center;
+    text-shadow: 0px 10px 20px black;
+}
+h3{
+    font-family: 'Montserrat', serif;
+    font-weight:800;
+    color:rgb(231, 196, 0);
+    font-size: small;
+    margin-top: 10px;
+    text-shadow: 0px 2px 2px black;
+}
+
+.soft {
+    text-align: center;
+    margin-top:50px;
+}
+
+
+.col {
+    border: 45% solid darkblue;
+}
+
+.circulo{
+    box-shadow:24px 24px 50px black;
+    display: grid;
+    justify-content:center;
+    margin-top: 50px;
+    margin-left: 60px;
+}

@@ -1,0 +1,87 @@
+.row{
+    padding: 40px;
+    box-sizing: border-box;
+}
+div{
+    background:linear-gradient(rgb(1, 0, 21), rgba(0, 1, 33, 0.938),rgba(2, 1, 61, 0.984));
+    background-position: center ;
+    
+    
+}
+.col-lg-2{
+    background:linear-gradient(rgb(1, 0, 21), rgba(0, 1, 24, 0.938),rgba(0, 0, 28, 0.984));
+}
+
+
+#educacion,#parrafoeducacion,#tituloeducacion{
+    color:gainsboro;
+    font-family: 'Montserrat', serif;
+    font-weight:400;
+}
+
+#años{
+    color:gainsboro;
+    font-family: 'Montserrat', serif;
+    font-weight:400;
+}
+
+h1{
+    font-family: 'Montserrat', serif;
+    font-weight:800;
+    color: rgb(98, 239, 203);
+    text-align: center;
+    margin-bottom:80px;
+}
+
+h2{
+    color: rgb(249, 249, 249);
+    font-family: 'Montserrat', serif;
+    font-weight:400;
+}
+
+p{
+    color: gainsboro;
+    font-family: 'Montserrat', serif;
+    font-weight:400;
+}
+h3{
+    font-size: x-large;
+    box-sizing: border-box;
+}
+h3{
+    font-size: medium;
+    
+}
+
+.tabla{
+    box-sizing:border-box;
+    border: 2px solid white;
+}
+.btn{
+    width: 120px;
+    height: 60px;
+}
+.listilla{
+    border: 2px solid white;
+}
+.item{
+    border-bottom: 2px solid white;
+}
+.listaed{
+    cursor: move;
+  }
+  .cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(13, 255, 0, 0.847),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+  .listaed:last-child {
+      border: none;
+    }
+  
+  
+  .cdk-drag-animating {
+    transition: transform 150ms cubic-bezier(0, 0, 0.2, 1);
+  }
